@@ -1,0 +1,133 @@
+.people-behind-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin-top: 60px;
+}
+
+.slider {
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 20px;
+    background-color: #122363;
+    transition: 0.5s;
+    min-width: 100%;
+}
+
+.image-slider {
+    grid-column: 1;
+    background-color: #122363;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-slider img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+
+.text-slider {
+    grid-column: 2;
+    color: white;
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    font-weight: 300;
+}
+
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.read-more button {
+    margin: 50px 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #122363;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 60px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;;
+}
+
+
+.read-more button:hover {
+    background-color: #1e3999;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .slide {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .image-slider {
+        grid-column: 1 / -1;
+        margin-right: 30px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .text-slider {
+        grid-column: 1 / -1;
+        margin-right: 15px; 
+        margin-left: 15px; 
+        margin-top: 15px; 
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-slider img {
+        width: 100%;
+    }
+
+    .text-slider {
+        font-size: 14px; /* Smaller font size for very small screens */
+        margin-bottom: 50px;
+    }
+}
