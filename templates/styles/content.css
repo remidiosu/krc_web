@@ -1,10 +1,13 @@
 .main-image-container {
-    height: calc(100vh - 65px); /* Adjust based on header height */
+    height: calc(100vh - 50px); 
     overflow: hidden;
     position: relative;
     width: 100%;
     margin-bottom: 0;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 .main-image {
     width: 100%;
@@ -35,8 +38,8 @@
 }
 
 .title {
-    font-size: xx-large;
-    margin-bottom: 60px;
+    font-size: xxx-large;
+    margin-top: 70px;
     color: #122363;
 }
 
@@ -46,6 +49,7 @@
     column-gap: 20px;
     color: black;
     margin-bottom: 70px;
+    margin-top: 80px;
 }
 
 .right-content {
