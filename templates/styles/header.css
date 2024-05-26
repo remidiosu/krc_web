@@ -61,13 +61,13 @@ a:visited {
 
 @media (max-width: 768px) {
     .nova-pro {
-        font-size: 17px;
-        padding-left: 7px;
+        font-size: 12px;
+        padding-left: 3px;
         display: flex;
     }
 
     .about-us, .people-behind, .journal, .contact-us {
-        font-size: 13px;
+        font-size: 9px;
         width: 100%;
         justify-content: flex-start;
         align-items: center;

@@ -62,3 +62,47 @@
     margin-left: 100px;
     font-weight: 400;
 }
+
+.intro {
+    font-weight: 400;
+    margin: 40px 40px;
+}
+
+@media (max-width: 768px) {
+    .left-side-block, .right-side-block {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .left-image, .right-image {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .left-image img, .right-image img {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .left-text, .right-text {
+        grid-column: 1;
+        margin: 15px 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left-text h1, .right-text h1 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-text p, .right-text p {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .left-side-block, .right-side-block {
+        margin: 10px;
+    }
+}
