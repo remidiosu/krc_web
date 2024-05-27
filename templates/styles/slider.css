@@ -100,6 +100,10 @@
 }
 
 @media (max-width: 768px) {
+    .read-more button {
+        margin: 30px 7px;
+        padding: 3px 20px;
+    }
     .slide {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
