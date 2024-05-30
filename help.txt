@@ -1,0 +1,16 @@
+import sqlite3
+from werkzeug.security import check_password_hash, generate_password_hash
+
+conn = sqlite3.connect('krc.db')
+print("Connected to database successfully")
+
+username = 'remi_sup'
+p = 'kaguraIsSuperiorHelp!!!'
+p_hash = generate_password_hash(p)
+
+conn.execute("INSERT INTO admin (name, password) VALUES (?, ?);", (username, p_hash))
+
+conn.commit()
+
+
+conn.close()

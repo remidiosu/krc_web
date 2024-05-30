@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+<h4>Log In</h4>
+
+<form method="post" action="/remi">
+    <label> Username. </label>
+    <input type="text" id="username" name="username" autocomplete="off" required> <br><br>
+    <label>Password. </label>
+    <input type="password" id="pass" name="pass" required><br><br>
+    <input type="submit" value="Submit">  
+</form>
+
+<br><br>
+<form action="/logout"><input type="submit" value="Logout"> </form>
+<br><br>
+
+{% endblock %}

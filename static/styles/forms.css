@@ -1,0 +1,27 @@
+.j-upload {
+    background-color: bisque;
+}
+.j-upload input {
+    display: block; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.submit {
+    position: relative;
+}
+
+.submit input {
+    position: absolute;
+    bottom: 15px;
+    right: 20px
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
