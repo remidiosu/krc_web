@@ -4,7 +4,7 @@ import sqlite3
 from werkzeug.security import check_password_hash
 
 app = Flask(__name__)
-app.secret_key = 'jnelvrjaegnprgnopiagnvoqi43ngoi3409249251490'
+app.secret_key = 'dev'
 
 
 def login_required(func):
@@ -17,10 +17,10 @@ def login_required(func):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template("base.html")
+    return render_template("index.html")
 
 
-@app.route('/remi', methods=['GET', 'POST'])
+@app.route('/a-admin', methods=['GET', 'POST'])
 def admin():
     if request.method == 'POST':
         db = sqlite3.connect('krc.db')

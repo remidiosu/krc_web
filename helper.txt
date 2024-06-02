@@ -1,0 +1,25 @@
+create_table_sql = """
+CREATE TABLE Journals (
+    journal_id INTEGER PRIMARY KEY,
+    issue TEXT,
+    volume TEXT,
+    date DATE,
+    pdf BLOB
+);
+
+CREATE TABLE Members (
+    member_id INTEGER PRIMARY KEY,
+    kimep_id BIGINT,
+    name TEXT,
+    position TEXT,
+    description TEXT,
+    photo BLOB
+);
+
+CREATE TABLE Admin (
+    admin_id INTEGER PRIMARY KEY, 
+    name TEXT, 
+    password TEXT
+)
+"""
+cursor.execute(create_table_sql)

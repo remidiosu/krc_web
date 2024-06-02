@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}  {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/forms.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/content.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/member.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/texts.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+
+
+    <script src="{{ url_for('static', filename='js/slide.js') }}"></script>
+</body>
+</html>
