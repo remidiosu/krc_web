@@ -1,23 +1,8 @@
 {% extends 'base.html' %}
 
-{% block title %} <title>Writing Department</title> {% endblock %}
+{% block title %} Writing Department {% endblock %}
 
 {% block body %}
-    <body>
-        <div class="main-container">
-            <!--------HEADER ----------------------------->
-            <div class="header">
-                <div class="left-header">
-                    <div class="nova-pro"><a href="index.html">NovaPro</a></div>
-                </div>
-                <div class="right-header">
-                    <button class="about-us"><a href="index.html">About Us</a></button>
-                    <button class="people-behind"><a href="pplbehind.html">People Behind</a></button>
-                    <button class="journal"><a href="journal.html">Journal</a></button>
-                    <button class="contact-us"><a href="contact.html">Contact Us</a></button>
-                </div>
-            </div>
-    
             <!--------IMAGE ----------------------------->
             <div class="main-image-container">
                 <p class="on-top">KIMEP RESEARCH CLUB</p>
@@ -27,18 +12,20 @@
 
             <!--------MAIN CONTENT ----------------------------->
             <div class="intro" style="margin-bottom: 100px; margin-top: 70px;">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores dolore officia hic ea aut, doloribus nesciunt ut eos magnam, obcaecati maxime debitis id distinctio, quod dolor. Optio veniam nihil saepe.
+            Welcome to the Writing Department! This department is where the main magic happens. The members here meet regularly to collaborate and provide feedback on their research. As you can see, this department is the backbone of our organization, providing its members with a way to share their working processes, provide and give support and feedback, and hold themselves accountable. 
             </div>
 
             <div class="left-side-block">
                 <div class="left-image">
-                    <img src="../images/people-place-holder.JPG">
+                    <img src="url_for('static', filename='images/writers.jpg')">
                 </div>
                 <div class="left-text">
                     <h1>Head of Writers</h1>
                     <h3>Alan Sailybaev</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repudiandae ipsa ut distinctio voluptatibus eligendi cupiditate blanditiis consequuntur. Quos dolorem beatae ea reprehenderit error, nam temporibus facilis nesciunt distinctio labore?
+                        В журнале нашем два основных отдела – редакторский и писательский. Если в редакторском отделе сидит полтора человека и просматривает, далеко не всегда интересные, работы, то отдел писательский представляется мне одним из самых любопытных мест, не знаю, потому – ли, что я там главный, или потому, что это действительно интересно. Писательский отдел занимается писательством. Когда в нашем журнале появляется интересная работа, скорее всего, это работа писательского отдела, который состоит из четырех человек, талантливых и воодушевленных, только не пишущих по-русски (не знаю уж почему). Перед каждым выпуском журнала, мы все вместе собираемся и обсуждаем темы работ, идет этот процесс нудно и долго. Мое место в этом деле принципиально ничем не отличается от рядовых участников, главенствующая позиция только заставляет меня заниматься формальными организационными работами. Но, тем не менее, без меня бы они не организовались, поэтому того, что вы здесь читаете, без меня бы не было. 
+                        <br><br>
+                        Editorial and writing departments are basing our magazine. Editorial department consists of one or two people that search not always interesting works, at the same time writing department is the most curious for me, I don’t know whether it’s because I’m in charge there, or because it’s really interesting. The writing department writes. When an interesting piece of work appears in our magazine, most likely it is the work of the writing department, which consists of four people, talented and inspired, but they don’t write in Russian (I don’t know why). Before each issue of the magazine, we all get together and discuss the topics of work, this process is tedious and long. My place in this matter is fundamentally no different from ordinary participants; the dominant position only forces me to engage in formal organizational work. But, nevertheless, without me they would not have organized themselves, so what you are reading here would not have happened without me.
                     </p>
                             
                 </div>
@@ -47,17 +34,10 @@
             <div class="member-title">Members</div>
             <div class="members">
                 <div class="member">
-                    <div class="member-pic"> <img src="../images/people-place-holder.JPG"></div>
-                    <div class="member-name">Zhaniya Rakhinova</div>
-                    <div class="member-desc">"I do things"</div>
+                    <div class="member-pic"> <img src="url_for('static', filename='images/writer_member_1.jpg')"></div>
+                    <div class="member-name">Akerke Erlankyzy</div>
+                    <div class="member-desc">"There are only a few things I'm passionate about, and this allows me to focus my thoughts and work more deeply. Writing and research are one of them."</div>
                 </div>
             </div>
 
-
-            <div class="footer">
-                <p>@KIMEP Research Club</p>
-            </div>
-        </div>
-    
-</body>
 {% endblock %}

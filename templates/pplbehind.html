@@ -1,30 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %} <title>People Behind</title> {% endblock %}
+{% block title %} People Behind {% endblock %}
 
 {% block body %}
-<body>
-    <div class="main-container">
-        <!--------HEADER ----------------------------->
-        <div class="header">
-            <div class="left-header">
-                <div class="nova-pro"><a href="index.html">NovaPro</a></div>
-            </div>
-            <div class="right-header">
-                <button class="about-us"><a href="index.html">About Us</a></button>
-                <button class="people-behind"><a href="pplbehind.html">People Behind</a></button>
-                <button class="journal"><a href="journal.html">Journal</a></button>
-                <button class="contact-us"><a href="contact.html">Contact Us</a></button>
-            </div>
-        </div>
-
         <!--------IMAGE ----------------------------->
         <div class="main-image-container">
             <p class="on-top">KIMEP RESEARCH CLUB</p>
             <img src="images/main-image.png" alt="Main Image" class="main-image">
             <div class="title">People Behind</div>
 
-        </div>
+        </div> 
 
         <!--------MAIN CONTENT ----------------------------->
         <div class="main-content">
@@ -37,35 +22,73 @@
 
         <div class="left-side-block">
             <div class="left-image">
-                <img src="images/people-place-holder.JPG">
+                <img src="url_for('static', filename='images/president.jpg')">
             </div>
             <div class="left-text">
                 <h1>President</h1>
                 <h3>Zhaniya Rakhimova</h3>
-                <p>President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, studying International Relations and Political Science.</p>
+                <p>Welcome to the KIMEP Research Club! I am eager to share with you the purpose of our organization and my own personal journey. 
+                    I am Zhaniya Rakhimova, a third-year student at KIMEP University, pursuing a degree in international affairs and global security. 
+                    I am currently serving as the president of the KIMEP Research Club, an organization I co-founded. <br><br>
+                    Our objective has consistently been cultivating a supportive environment where students can enhance their research and writing abilities. 
+                    We believe that strong academic writing skills are crucial for success in any subject, especially if you want to connect your life with science. 
+                    To this end, we endeavor to assist our members in developing their ideas, conducting in-depth research, and effectively presenting their findings 
+                    through workshops, peer reviews, and research conferences. <br><br>
+                    The activities of our group are most effectively represented by our student journal- “NovaPro”. It serves as a forum for the expression of our members' 
+                    dedication and creative ideas. Our club's broad interests and areas of expertise are reflected in the wide variety of topics covered by the articles 
+                    we publish each semester. This magazine is more than a mere publication; it is evidence of our members' commitment and intellectual curiosity.
+                    <br><br>
+                    Russia and Central Asia represent my own personal research interest, with a particular emphasis on the foreign policy of the Central Asian governments. 
+                    My membership in the KIMEP Research Club and the majority of my academic work have been motivated by this regional focus. I believe that anyone studying 
+                    international affairs in the present era must possess a comprehensive understanding of the dynamics of this strategically significant region.
+                    <br><br>
+                    Moreover, I was fortunate to have the opportunity to study as an exchange student at Hankuk University of Foreign Studies in South Korea from September 
+                    2023 to December 2023. My perspective was broadened and my awareness of global concerns was deepened by this experience. It also reaffirmed my resolve 
+                    to support our club's mission of encouraging global cooperation and academic success.
+                    <br><br>
+                    In my capacity as president of the KIMEP Research Club, I am committed to providing our members with the resources and motivation they need to 
+                    achieve success. This is a friendly and intellectually interesting group, regardless of one's area of passion: international relations, political 
+                    science, economics, etc.
+                    <br><br>
+                    I would be delighted if you would consider joining us in developing your research abilities. By working together, we may have a significant effect 
+                    and contribute to the accumulation of knowledge in our respective professions. Welcome to the KIMEP Research Club!
+
+                </p>
             </div>
         </div>    
         
         <div class="left-side-block">
             <div class="left-image">
-                <img src="images/people-place-holder.JPG">
+                <img src="{{url_for('static', filename='images/vicepresident.jpg')}}">
             </div>
             <div class="left-text">
                 <h1>Vice President</h1>
                 <h3>Gulnur Adanbekova</h3>
-                <p>Vice-President and Co-Founder of KIMEP Research Club. Gulnur is a Junior student at KIMEP University, studying Business and IT.</p>
+                <p>Hi! My name is Gulnur, and I am vice president of KRC and head of the IT department. If you are having any trouble with this website, this is probably my fault. 
+                    Sorry for that :). I am currently majoring in Information Systems in Business, specifically big data analytics, and have discovered at KIMEP my passion for research 
+                    and writing. My personal research interests are all connected to statistical methods, data management, and artificial intelligence. They led me to co-found the organization 
+                    with Zhaniya. We hope to create a supportive and creative research writing community among students at our university, as well as provide a way for feedback and publishing 
+                    of the works in NovaPro. In our organization, we collaborate on writing projects and organize events with guest lecturers, as our goal is continuous self-improvement. I hope 
+                    very much to see ambitious, inspiring people join us to grow to our full potential together! </p>
             </div>
-            
         </div>
         
         <div class="left-side-block">
             <div class="left-image">
-                <img src="images/people-place-holder.JPG">
+                <img src="{{ url_for('static', filename='images/writers.jpg') }}">
             </div>
             <div class="left-text">
                 <h1>Head of Writers</h1>
                 <h3>Alan Sailybaev</h3>
-                <p>President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, studying International Relations and Political Science.</p>
+                <p>В журнале нашем два основных отдела – редакторский и писательский. Если в редакторском отделе сидит полтора человека и просматривает, 
+                    далеко не всегда интересные, работы, то отдел писательский представляется мне одним из самых любопытных мест, не знаю, потому – ли, 
+                    что я там главный, или потому, что это действительно интересно. Писательский отдел занимается писательством. Когда в нашем журнале появляется 
+                    интересная работа, скорее всего, это работа писательского отдела, который состоит из четырех человек, талантливых и воодушевленных, только не пишущих по-русски (не знаю уж почему). 
+                    Перед каждым выпуском журнала, мы все вместе собираемся и обсуждаем темы работ, идет этот процесс нудно и долго. Мое место в этом деле принципиально ничем не отличается от рядовых участников, 
+                    главенствующая позиция только заставляет меня заниматься формальными организационными работами. Но, тем не менее, без меня бы они не организовались, поэтому того, что вы здесь читаете, без меня бы 
+                    не было. <br><br> 
+                    Editorial and writing departments are basing our magazine. Editorial department consists of one or two people that search not always interesting works, at the same time writing department is the most curious for me, I don’t know whether it’s because I’m in charge there, or because it’s really interesting. The writing department writes. When an interesting piece of work appears in our magazine, most likely it is the work of the writing department, which consists of four people, talented and inspired, but they don’t write in Russian (I don’t know why). Before each issue of the magazine, we all get together and discuss the topics of work, this process is tedious and long. My place in this matter is fundamentally no different from ordinary participants; the dominant position only forces me to engage in formal organizational work. But, nevertheless, without me they would not have organized themselves, so what you are reading here would not have happened without me.
+                </p>
                 <div class="read-more">
                     <a href="departments/writers.html"><button>Read more</button></a>
                 </div>            
@@ -131,9 +154,4 @@
         </div>
 
 
-        <div class="footer">
-            <p>@KIMEP Research Club</p>
-        </div>
-    </div>
-</body>
 {% endblock %}

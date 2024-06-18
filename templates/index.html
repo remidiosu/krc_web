@@ -3,21 +3,6 @@
 {% block title %} Kimep Research Club {% endblock %}
 
 {% block body %}
-<body>
-    <div class="main-container">
-        <!--------HEADER ----------------------------->
-        <div class="header">
-            <div class="left-header">
-                <div class="nova-pro"><a href="index.html">NovaPro</a></div>
-            </div>
-            <div class="right-header">
-                <button class="about-us"><a href="index.html">About Us</a></button>
-                <button class="people-behind"><a href="pplbehind.html">People Behind</a></button>
-                <button class="journal"><a href="journal.html">Journal</a></button>
-                <button class="contact-us"><a href="contact.html">Contact Us</a></button>
-            </div>
-        </div>
-
         <!--------IMAGE ----------------------------->
         <div class="main-image-container">
             <p class="on-top">KIMEP RESEARCH CLUB</p>
@@ -61,7 +46,7 @@
                         and foster interdisciplinary collaboration.                        
                     </p>
                     <div class="read-more">
-                        <a href="journal.html"><button>Read more</button></a>
+                        <a href="{{ url_for('journal') }}"><button>Read more</button></a>
                     </div>
                 </div>
                 <div class="right-content">
@@ -73,21 +58,18 @@
 
         <!--------people behind slider ----------------------------->
         <div class="people-behind-main">
+
             <div class="title">People Behind</div>
             <div class="slider">
                 <div class="slides">
-                <div class="slide">
-                    <div class="image-slider"><img src="images/people-place-holder.JPG" alt="Image 1"></div> 
-                    <div class="text-slider">
-                        <h1>Zhaniya Rakhimova</h1>
-                        <p>President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, 
-                            studying International Relations and Political Science.<br><br>
-                            President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, 
-                            studying International Relations and Political Science. <br><br>
-                            President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, 
-                            studying International Relations and Political Science.</p>
-                    </div> 
-                </div>
+                    <div class="slide">
+                        <div class="image-slider"><img src="images/people-place-holder.JPG" alt="Image 1"></div> 
+                        <div class="text-slider">
+                        <h1>Zhaniya Rakhimova</h1> 
+                        <p>
+                        </p>
+                        </div> 
+                    </div>
                 <div class="slide">
                     <div class="image-slider"><img src="images/people-place-holder.JPG" alt="Image 1"></div> 
                     <div class="text-slider">
@@ -168,17 +150,7 @@
                 </div>
             </div>
             <div class="read-more">
-                <a href="pplbehind.html"><button>Read more</button></a>
+                <a href="{{ url_for('pplbehind') }}"><button>Read more</button></a>
             </div>
             </div>
-
-        <!--------FOOTER ----------------------------->
-        <div class="footer">
-            <p>@KIMEP Research Club</p>
-        </div>
-
-
-        <script src="scripts/slide.js"></script>
-    </div>
-</body>
 {% endblock %}

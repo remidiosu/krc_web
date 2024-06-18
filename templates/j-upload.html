@@ -1,0 +1,21 @@
+{% extends 'base-a.html' %}
+
+{% block body %}  
+<h3>Upload Journal</h3><br>
+<div class="j-upload">
+    <form action="/j-upload" method="post" enctype="multipart/form-data">
+        <label>Date. </label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label>Issue. </label> 
+        <input type="text" id="issue" name="issue" required><br>  
+
+        <label>Volume. </label> 
+        <input type="text" id="volume" name="volume" required><br> 
+        
+        <label>PDF of the Journal. </label> 
+        <input type="file" id="j-pdf" name="j-pdf" accept=".pdf" required><br> <br> 
+        <input type="submit" value="Upload">
+    </form>
+</div>
+{% endblock %}

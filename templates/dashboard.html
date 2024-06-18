@@ -1,21 +1,43 @@
-{% extends 'base.html' %}
+{% extends 'base-a.html' %}
 
 {% block body %} 
 
 <h2>Admin Dashboard</h2>
 
-<form method="post" action="/j-upload">
-    <input type="submit" value="Upload Journal">
-</form>
+<button>
+    <a href="{{url_for('jUpload')}}">
+        Upload Journal
+    </a>
+</button>
 
 <br><br>
-<form method="post" action="/members">
-    <input type="submit" value="Members">
-</form>
+<button>
+    <a href="{{url_for('admins')}}">
+        Admins list
+    </a>
+</button>
+
+<br><br>
+<button>
+    <a href="{{url_for('aUpload')}}">
+        New Admin
+    </a>
+</button>
+
+<br><br>
+<button>
+    <a href="{{url_for('journals')}}">
+        List of journals
+    </a>
+</button>
+
 <br><br>
 
-<form method="post" action="/remi">
-    <input type="submit" value="Log Out">
-</form>
+<button>
+    <a href="{{url_for('logout')}}">
+        Log Out
+    </a>
+</button>
+
 
 {% endblock %} 

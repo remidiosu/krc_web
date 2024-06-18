@@ -1,0 +1,27 @@
+{% extends 'base-a.html' %}
+
+{% block body %}  
+
+<h1>Admins</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Admin ID</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for admin in admins %}
+        <tr>
+            <td>{{ admin[0] }}</td>
+            <td>{{ admin[1] }}</td>
+            <td>
+                <button onclick="deleteAdmin('{{ admin[0] }}')">Delete</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

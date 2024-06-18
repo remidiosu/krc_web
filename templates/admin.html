@@ -1,9 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'base-a.html' %}
 
 {% block body %} 
 <h4>Log In</h4>
 
-<form method="post" action="/remi">
+<form method="post" action="/a-admin">
     <label> Username. </label>
     <input type="text" id="username" name="username" autocomplete="off" required> <br><br>
     <label>Password. </label>
@@ -13,6 +13,6 @@
 
 <br><br>
 <form action="/logout"><input type="submit" value="Logout"> </form>
-<br><br>
+<br><br> 
 
 {% endblock %}

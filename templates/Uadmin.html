@@ -1,0 +1,14 @@
+{% extends 'base-a.html' %}
+
+{% block body %}  
+<h3>New admin</h3><br>
+<div class="j-upload">
+    <form action="/a-upload" method="post" enctype="multipart/form-data">
+        <label> Username. </label>
+        <input type="text" id="username" name="username" autocomplete="off" required> <br><br>
+        <label>Password. </label>
+        <input type="password" id="pass" name="pass" required><br><br>
+        <input type="submit" value="Submit">  
+    </form>
+</div>
+{% endblock %}

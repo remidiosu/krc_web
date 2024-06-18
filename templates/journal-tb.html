@@ -1,0 +1,30 @@
+{% extends 'base-a.html' %}
+
+{% block body %}  
+
+<h1>Available Journals</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Issue</th>
+            <th>Volume</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for journal in journals %}
+        <tr>
+            <td>{{ journal[1] }}</td>
+            <td>{{ journal[2] }}</td>
+            <td>{{ journal[3] }}</td>
+            <td>
+                <a href="{{ url_for('download_journal', journal_id=journal[0]) }}">Download PDF</a>
+                <button onclick="deleteJournal('{{ journal[0] }}')">Delete</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

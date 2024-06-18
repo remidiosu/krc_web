@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}  {% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/forms.css') }}">
+    <title> {% block title %}  {% endblock %} </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/content.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
@@ -16,10 +15,31 @@
     
 </head>
 <body>
+    <div class="main-container">
+         <!--------HEADER ----------------------------->
+         <div class="header">
+            <div class="left-header">
+                <div class="nova-pro"><a href="{{ url_for('index') }}">NovaPro</a></div>
+            </div>
+            <div class="right-header">
+                <button class="about-us"><a href="{{ url_for('index') }}">About Us</a></button>
+                <button class="people-behind"><a href="{{ url_for('pplbehind') }}">People Behind</a></button>
+                <button class="journal"><a href="{{ url_for('journal') }}">Journal</a></button>
+                <button class="contact-us"><a href="{{ url_for('contact') }}">Contact Us</a></button>
+            </div>
+        </div>
+
+
+
     {% block body %}
     {% endblock %}
 
+    <!--------FOOTER ----------------------------->
+    <div class="footer">
+        <p>@KIMEP Research Club</p>
+    </div>
 
     <script src="{{ url_for('static', filename='js/slide.js') }}"></script>
+</div>
 </body>
 </html>
