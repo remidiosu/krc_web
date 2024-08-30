@@ -6,7 +6,7 @@
         <!--------IMAGE ----------------------------->
         <div class="main-image-container">
             <p class="on-top">KIMEP RESEARCH CLUB</p>
-            <img src="images/main-image.png" alt="Main Image" class="main-image">
+            <img src="{{url_for('static', filename='images/pplbehindimage.jpg')}}" alt="Main Image" class="main-image">
             <div class="title">People Behind</div>
 
         </div> 
@@ -15,41 +15,40 @@
         <div class="main-content">
             <div class="intro">
                 <p> At KIMEP Research Club we work as a team to put the best works in NovaPro. Read further to find out more about our departments and head managements
-                    at our departments:<br><br> <a href="departments/writers.html">Writing</a>, <a href="departments/editor.html">Editing</a>, <a href="departments/organization.html">Organization</a>,
-                    <a href="departments/finance.html">Finance</a>, <a href="departments/smm.html">SMM</a>.
+                    at our departments:<br><br> <a href="{{url_for('writers')}}">Writing</a>,
+                    <a href="{{url_for('finance')}}">Finance</a>, <a href="{{url_for('smm')}}">SMM</a>.
                 </p>
             </div>
 
         <div class="left-side-block">
             <div class="left-image">
-                <img src="url_for('static', filename='images/president.jpg')">
+                <img src="{{url_for('static', filename='images/president.jpg')}}">
             </div>
             <div class="left-text">
                 <h1>President</h1>
                 <h3>Zhaniya Rakhimova</h3>
                 <p>Welcome to the KIMEP Research Club! I am eager to share with you the purpose of our organization and my own personal journey. 
                     I am Zhaniya Rakhimova, a third-year student at KIMEP University, pursuing a degree in international affairs and global security. 
-                    I am currently serving as the president of the KIMEP Research Club, an organization I co-founded. <br><br>
+                    I am currently serving as the president of the KIMEP Research Club, an organization I co-founded. <br>
                     Our objective has consistently been cultivating a supportive environment where students can enhance their research and writing abilities. 
                     We believe that strong academic writing skills are crucial for success in any subject, especially if you want to connect your life with science. 
                     To this end, we endeavor to assist our members in developing their ideas, conducting in-depth research, and effectively presenting their findings 
-                    through workshops, peer reviews, and research conferences. <br><br>
+                    through workshops, peer reviews, and research conferences. <br>
                     The activities of our group are most effectively represented by our student journal- “NovaPro”. It serves as a forum for the expression of our members' 
                     dedication and creative ideas. Our club's broad interests and areas of expertise are reflected in the wide variety of topics covered by the articles 
                     we publish each semester. This magazine is more than a mere publication; it is evidence of our members' commitment and intellectual curiosity.
-                    <br><br>
+                    <br>
                     Russia and Central Asia represent my own personal research interest, with a particular emphasis on the foreign policy of the Central Asian governments. 
                     My membership in the KIMEP Research Club and the majority of my academic work have been motivated by this regional focus. I believe that anyone studying 
                     international affairs in the present era must possess a comprehensive understanding of the dynamics of this strategically significant region.
-                    <br><br>
+                    <br>
                     Moreover, I was fortunate to have the opportunity to study as an exchange student at Hankuk University of Foreign Studies in South Korea from September 
                     2023 to December 2023. My perspective was broadened and my awareness of global concerns was deepened by this experience. It also reaffirmed my resolve 
                     to support our club's mission of encouraging global cooperation and academic success.
-                    <br><br>
+                    <br>
                     In my capacity as president of the KIMEP Research Club, I am committed to providing our members with the resources and motivation they need to 
                     achieve success. This is a friendly and intellectually interesting group, regardless of one's area of passion: international relations, political 
                     science, economics, etc.
-                    <br><br>
                     I would be delighted if you would consider joining us in developing your research abilities. By working together, we may have a significant effect 
                     and contribute to the accumulation of knowledge in our respective professions. Welcome to the KIMEP Research Club!
 
@@ -66,7 +65,7 @@
                 <h3>Gulnur Adanbekova</h3>
                 <p>Hi! My name is Gulnur, and I am vice president of KRC and head of the IT department. If you are having any trouble with this website, this is probably my fault. 
                     Sorry for that :). I am currently majoring in Information Systems in Business, specifically big data analytics, and have discovered at KIMEP my passion for research 
-                    and writing. My personal research interests are all connected to statistical methods, data management, and artificial intelligence. They led me to co-found the organization 
+                    and writing. <br><br> My personal research interests are all connected to statistical methods, data management, and artificial intelligence. They led me to co-found the organization 
                     with Zhaniya. We hope to create a supportive and creative research writing community among students at our university, as well as provide a way for feedback and publishing 
                     of the works in NovaPro. In our organization, we collaborate on writing projects and organize events with guest lecturers, as our goal is continuous self-improvement. I hope 
                     very much to see ambitious, inspiring people join us to grow to our full potential together! </p>
@@ -97,40 +96,13 @@
 
         <div class="left-side-block">
             <div class="left-image">
-                <img src="images/people-place-holder.JPG">
-            </div>
-            <div class="left-text">
-                <h1>Head of Editing</h1>
-                <h3>Amir Karazhigitov</h3>
-                <p>Vice-President and Co-Founder of KIMEP Research Club. Gulnur is a Junior student at KIMEP University, studying Business and IT.</p>
-                <div class="read-more">
-                    <a href="departments/editor.html"><button>Read more</button></a>
-                </div>            
-            </div>
-
-        </div>
-
-        <div class="left-side-block">
-            <div class="left-image">
-                <img src="images/people-place-holder.JPG">
-            </div>
-            <div class="left-text">
-                <h1>Head of Organization</h1>
-                <h3>Daria Ursan</h3>
-                <p>President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, studying International Relations and Political Science.</p>
-                <div class="read-more">
-                    <a href="departments/organization.html"><button>Read more</button></a>
-                </div>            
-            </div>
-        </div> 
-        <div class="left-side-block">
-            <div class="left-image">
-                <img src="images/people-place-holder.JPG">
+                <img src="{{url_for('static', filename='images/smm-head.jpg')}}">
             </div>
             <div class="left-text">
                 <h1>Head of SMM</h1>
                 <h3>Arailym Shokenova</h3>
-                <p>Vice-President and Co-Founder of KIMEP Research Club. Gulnur is a Junior student at KIMEP University, studying Business and IT.</p>
+                <p>May this new chapter be filled with fruitful collaborations, insightful discoveries, and meaningful promotion to our fields of study🤍
+                </p>
                 <div class="read-more">
                     <a href="departments/smm.html"><button>Read more</button></a>
                 </div>            
@@ -140,12 +112,20 @@
 
         <div class="left-side-block">
             <div class="left-image">
-                <img src="images/people-place-holder.JPG">
+                <img src="{{url_for('static', filename='images/fin-head.jpg')}}">
             </div>
             <div class="left-text">
                 <h1>Head of Finance</h1>
                 <h3>Meirlana Bolat</h3>
-                <p>President and Co-Founder of KIMEP Research Club. Zhaniya is a Junior student at KIMEP University, studying International Relations and Political Science.</p>
+                <p>I am Meirlana Bolat, Head of the Finance Department of the KIMEP Research Club and a second-year student of Kimep University with a degree in accounting and auditing.
+                    <br><br>
+                    As the Head of the Finance Department at the esteemed KIMEP Research Club, I am committed to fostering financial stability and growth within our organization. With a keen
+                     focus on developing my competencies in research skills for my future, I also aim to enhance our understanding of financial trends and optimizing resource allocation to drive
+                      long-term success of the organization. I strive to develop the budget of the organization by forecasting income and expenses and identifying areas for savings or investments. 
+                      My role is to lead the finance department team; providing guidance and support to help team members grow in their roles and contribute effectively to the success 
+                    of the organization, through collaboration between different departments (such as research teams, administration and project managers) to align financial goals with the priorities 
+                    of the organization. Through my commitment to financial excellence and the development of interdisciplinary collaboration, I am confident in my ability to propel the KIMEP Research Club to continuous growth and success in a dynamic world of academic research and innovation.
+                </p>
                 <div class="read-more">
                     <a href="departments/finance.html"><button>Read more</button></a>
                 </div>            

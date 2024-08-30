@@ -6,7 +6,7 @@
         <!--------IMAGE ----------------------------->
         <div class="main-image-container">
             <p class="on-top">KIMEP RESEARCH CLUB</p>
-            <img src="images/main-image.png" alt="Main Image" class="main-image">
+            <img src="{{url_for('static', filename='images/main-journal.jpg')}}" alt="Main Image" class="main-image">
             <div class="title">Journal</div>
 
         </div>
@@ -30,11 +30,11 @@
                         organization.     
                 </p>
                 <div class="read-more">
-                    <a href="j-download.html"><button>Download Journal</button></a>
+                    <a href="{{url_for('jdownload')}}"><button>Download Journal</button></a>
                 </div>
                 </div>
                 <div class="right-content">
-                <img src="images/journal-image.png" class="content-image" style="max-width: 500px;">
+                <img src="{{url_for('static', filename='images/journal-image.png')}}" class="content-image" style="max-width: 500px;">
 
                 </div>
             </div>

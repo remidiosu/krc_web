@@ -6,18 +6,20 @@
             <!--------IMAGE ----------------------------->
             <div class="main-image-container">
                 <p class="on-top">KIMEP RESEARCH CLUB</p>
-                <img src="../images/main-image.png" alt="Main Image" class="main-image">
+                <img src="{{url_for('static', filename='images/writersimg.jpg')}}" alt="Main Image" class="main-image">
                 <div class="title">Writing Department</div>
             </div>
 
             <!--------MAIN CONTENT ----------------------------->
             <div class="intro" style="margin-bottom: 100px; margin-top: 70px;">
-            Welcome to the Writing Department! This department is where the main magic happens. The members here meet regularly to collaborate and provide feedback on their research. As you can see, this department is the backbone of our organization, providing its members with a way to share their working processes, provide and give support and feedback, and hold themselves accountable. 
+            Welcome to the Writing Department! This is the place where main magic of our organization happens.
+            The members here meet regularly to collaborate and provide feedback on their research. As you can see, this department is the backbone of our organization, 
+            providing its members with a way to share their working processes, provide and give support and feedback, and hold themselves accountable. 
             </div>
 
             <div class="left-side-block">
                 <div class="left-image">
-                    <img src="url_for('static', filename='images/writers.jpg')">
+                    <img src="{{url_for('static', filename='images/writers.jpg')}}">
                 </div>
                 <div class="left-text">
                     <h1>Head of Writers</h1>
@@ -34,10 +36,21 @@
             <div class="member-title">Members</div>
             <div class="members">
                 <div class="member">
-                    <div class="member-pic"> <img src="url_for('static', filename='images/writer_member_1.jpg')"></div>
+                    <div class="member-pic"> <img src="{{url_for('static', filename='images/writer_member_1.jpg')}}"></div>
+                    <div class="member-name">Akerke Erlankyzy</div>
+                    <div class="member-desc">"There are only a few things I'm passionate about, and this allows me to focus my thoughts and work more deeply. Writing and research are one of them."</div>
+                </div>
+                <div class="member">
+                    <div class="member-pic"> <img src="{{url_for('static', filename='images/writer_member_1.jpg')}}"></div>
+                    <div class="member-name">Akerke Erlankyzy</div>
+                    <div class="member-desc">"There are only a few things I'm passionate about, and this allows me to focus my thoughts and work more deeply. Writing and research are one of them."</div>
+                </div>
+                <div class="member">
+                    <div class="member-pic"> <img src="{{url_for('static', filename='images/writer_member_1.jpg')}}"></div>
                     <div class="member-name">Akerke Erlankyzy</div>
                     <div class="member-desc">"There are only a few things I'm passionate about, and this allows me to focus my thoughts and work more deeply. Writing and research are one of them."</div>
                 </div>
             </div>
+            
 
 {% endblock %}

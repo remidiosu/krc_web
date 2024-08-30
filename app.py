@@ -5,6 +5,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 import os
 import io
 
+
 app = Flask(__name__)
 app.secret_key = 'dev'
 
@@ -185,7 +186,12 @@ def finance():
 
 @app.route('/j-download', methods=['GET', 'POST'])
 def jdownload():
-    return render_template("j-download.html")
+    db = sqlite3.connect('krc.db')
+    cursor = db.cursor()
+    cursor.execute("SELECT journal_id, issue, volume, date FROM Journals")
+    journals = cursor.fetchall()
+    db.close()
+    return render_template("j-download.html", journals=journals)
 
 @app.route('/journal', methods=['GET', 'POST'])
 def journal():

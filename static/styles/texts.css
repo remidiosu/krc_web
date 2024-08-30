@@ -1,5 +1,6 @@
 .left-side-block {
     margin-left: 45px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 25% 75%;
 }
@@ -27,6 +28,7 @@
 
 .right-side-block {
     margin-right: 45px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 75% 25%;
 }

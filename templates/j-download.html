@@ -6,7 +6,7 @@
         <!--------IMAGE ----------------------------->
         <div class="main-image-container">
             <p class="on-top">KIMEP RESEARCH CLUB</p>
-            <img src="images/main-image.png" alt="Main Image" class="main-image">
+            <img src="{{url_for('static', filename='images/editing-index.jpg')}}" alt="Main Image" class="main-image">
             <div class="title">Download Journal</div>
 
         </div>
@@ -16,11 +16,14 @@
             <div class="text-block">
                 <div class="left-content">
                     <p style="font-weight: 600; font-size: larger;">
-                        <a href="#"> Vol.1 June, 2024</a>
+                        {% for journal in journals %}
+                        <a href="{{ url_for('download_journal', journal_id=journal[0]) }}"> Issue {{ journal[1] }}, Volume {{ journal[2] }}. {{ journal[3] }}</a>
+                        <br>
+                        {% endfor %}
                 </p>
                 </div>
                 <div class="right-content">
-                <img src="images/journal-image.png" class="content-image" style="max-width: 500px;">
+                <img src="{{url_for('static', filename='images/journal-image.png')}}" class="content-image" style="max-width: 500px;">
                 </div>
             </div>
         </div>
